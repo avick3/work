@@ -55,7 +55,6 @@
       background-color: #0b8a33;
     }
 
-
     h1 {
       text-align: center;
       font-size: 70px;
@@ -67,8 +66,9 @@
       font-size: 30px;
       color: #000;
     }
-
-
+    p{
+      text-align: center;
+    }
     .content-container {
       display: flex;
       flex-wrap: wrap;
@@ -78,21 +78,29 @@
       padding: 0 10%;
     }
 
+    .image-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    /* Adjusted size for Home and Credit Application images */
+    .large-img {
+      width: 45%; /* Adjusted for larger images */
+      max-width: 500px; /* Ensure these images don't stretch too wide */
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      margin-right: 20px;
+    }
+
+    /* Maintain original size for other images */
     .image-container img {
       width: 100%;
       max-width: 300px;
       border-radius: 10px;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1) 
-    }
-        
-        .text-box {
-      font-size: 18px;
-      padding: 20px;
-      background-color: #fff;
       box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-      border-radius: 10px;
-      max-width: 400px;
-      text-align: center;
+      margin-top: 20px;
     }
 
     iframe {
@@ -114,7 +122,6 @@
 </head>
 <body>
 
-
   <ul>
     <li><a href="#home">Home</a></li>
     <li><a href="#aboutme">About Me</a></li>
@@ -122,10 +129,9 @@
     <li><a href="#contact">Contact</a></li>
   </ul>
 
- 
   <header>
     <h1>Year One</h1>
-    <h2>Magazine </h2>
+    <h2>Magazine</h2>
   </header>
 
   <!-- Year One - Magazine Section -->
@@ -139,76 +145,65 @@
       <img src="101 emotional object one.jpg" alt="Cracks">
       <img src="101 emotional object two.jpg" alt="Butterfly">
       <img src="101 back.jpg" alt="Back">
-<p>
-
-      </p>
-        
-
-<h2>
-  Emotional Object
-      </h2>
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/RKniKvJwlPQ?start=2" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
   </div>
 
+  <h2>Emotional Object</h2>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/RKniKvJwlPQ?start=2" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
   <!-- Year Two - Photography Section -->
   <section class="projects-section">
     <h1>Year Two</h1>
-    <h2>
-      Photography
-    </h2>
+    <h2>Photography</h2>
     <div class="content-container">
       <div class="image-container">
         <img src="closeup.jpeg" alt="Casey Vicks Portrait">
         <img src="201 action.jpg" alt="Action Shot">
         <img src="201 product.jpg" alt="Product">
-        <img src="201 animal.jpg" alt="Duck">
-        <img src="201 landscape.jpg" alt="Landscape" width="500">
+      </div>
+      <div class="image-container">
+        <img class="half-width" src="201 animal.jpg" alt="Duck">
+        <img class="half-width" src="201 landscape.jpg" alt="Landscape">
       </div>
     </div>
   </section>
 
-<h2>
-  Documentary
-  </h2>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/2iNTG-gmJRQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-  <p>
-    Group Members - Elizabeth "Liza" Storchak, Anna George, Gillian Young
-  </p>
+  <h2>Documentary</h2>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/2iNTG-gmJRQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <p>Group Members - Elizabeth "Liza" Storchak, Anna George, Gillian Young</p>
+
   <section class="projects-section">
     <h2>App Development</h2>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/myzS1OR6_gw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    <p>
-      
-
-Group Members - Casey Sheen, Senuji Thennakoon, Katelyn Nguyen, Mandela Cordova
-    </p>
-
-    </div>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/myzS1OR6_gw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <p>Group Members - Casey Sheen, Senuji Thennakoon, Katelyn Nguyen, Mandela Cordova</p>
   </section>
 
-
+  <!-- Redesign Website Section -->
   <section class="projects-section">
-    <h2> Redesign Website</h2>
+    <h2>Redesign Website</h2>
     <h3>Original website - <a href="http://www.danthemoneyman.com/index.html">Dan The Money Man</a></h3>
     <div class="content-container">
+      <!-- Home and Credit Application on the same line, centered and larger -->
       <div class="image-container">
-        <img src="1733546209826-c65971ba-98df-4eea-8689-2b3804caed0d_1.jpg" alt="DTMM Home">
-        <img src="credit application.jpg" alt="Credit Application">
+        <img class="large-img" src="1733546209826-c65971ba-98df-4eea-8689-2b3804caed0d_1.jpg" alt="DTMM Home">
+        <img class="large-img" src="credit application.jpg" alt="Credit Application">
+      </div>
+    </div>
+
+    <!-- Financial Services and Contact Us stacked below -->
+    <div class="content-container">
+      <div class="image-container">
         <img src="finacial services.jpg" alt="Financial Services">
+      </div>
+      <div class="image-container">
         <img src="contact us.jpg" alt="Contact Us">
       </div>
     </div>
   </section>
 
-<h2>
-  Podcast
-  </h2>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/_-MrzZNsYqc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-<p>
-  Group Members - Jennifer "Jenny" South, Ella Kuhlman, Tristan Whalen, Amelia Peng, Matthew Spong
-  </p>
+  <h2>Podcast</h2>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/_-MrzZNsYqc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <p>Group Members - Jennifer "Jenny" South, Ella Kuhlman, Tristan Whalen, Amelia Peng, Matthew Spong</p>
 
 </body>
 </html>
